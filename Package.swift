@@ -25,7 +25,7 @@ let package = Package(
                 .target(name: "YandexMapsMobile"),
                ],
                 path: "YandexMapsWrapper",
-                linkerSettings: [.linkedFramework("UserNotifications")]
+                linkerSettings: [.unsafeFlags(["-ObjC"])]
                ),
     ]
 )
